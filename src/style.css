@@ -47,7 +47,6 @@ section {
   margin: 0;
 }
 
-
 #scoresBox {
   width: 100%;
   border: solid black;
@@ -61,6 +60,7 @@ section {
 
 #addScore {
   align-content: flex-start;
+  justify-content: center;
 }
 
 #addForm {
@@ -85,4 +85,11 @@ section {
 button {
   font-family: 'Patua One', cursive;
   font-size: 0.7rem;
+}
+
+.scoreText {
+  width: 100%;
+  padding: 2vh 1vw;
+  margin: 0;
+  border-bottom: solid black 1px;
 }

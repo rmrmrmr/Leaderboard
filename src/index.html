@@ -12,14 +12,14 @@
   </header>
   <section id="recentScores">
     <h2 class="title sectionTitle">Recent Scores</h2>
-    <button type="submit" id="refreshBttn">Refresh</button>
+    <button type="submit" id="refreshBttn">Clear</button>
     <div id="scoresBox"></div>
   </section>
   <section id="addScore">
     <h2 class="title sectionTitle" id="addTitle">Add your Score</h2>
     <form id="addForm" action="post">
-      <input type="text" name="nameInput" id="nameInput" class="input" placeholder="Your name">
-      <input type="text" name="scoreInput" id="scoreInput" class="input" placeholder="Your score">
+      <input type="text" name="nameInput" id="nameInput" class="input" placeholder="Your name" required>
+      <input type="number" name="scoreInput" id="scoreInput" class="input" placeholder="Your score" required>
       <button type="submit" id="submitBttn">Submit</button>
     </form>
   </section>
