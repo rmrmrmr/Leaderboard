@@ -1,14 +1,28 @@
-import _ from 'lodash';
-import './style.css'
+import './style.css';
+import { refreshBttn, addForm, scoresWrap } from './modules/elements.js';
+import Functions from './modules/methods.js';
 
-function component() {
-  const element = document.createElement('div');
+const scoresArr = new Functions();
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+window.addEventListener('DOMContentLoaded', () => {
+  scoresArr.parseLocalSt();
+  scoresArr.printHTMl();
+});
 
-  return element;
-}
+addForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const nameInput = document.getElementById('nameInput');
+  const scoreInput = document.getElementById('scoreInput');
 
-document.body.appendChild(component());
+  scoresArr.getValues(nameInput, scoreInput);
+  scoresArr.setIndex();
+  scoresArr.printHTMl();
+  scoresArr.addToLocalStorage();
+  Functions.clearInput(nameInput, scoreInput);
+});
+
+refreshBttn.addEventListener('click', () => {
+  scoresWrap.innerHTML = '';
+  localStorage.clear();
+  scoresArr.deleteArr();
+});

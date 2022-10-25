@@ -4,9 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webpack Template</title>
+  <title>Leaderboard</title>
 </head>
 <body>
-  <h1>Hello mundo!</h1>
+  <header id="header">
+    <h1 class="title" id="leaderboardTitle">Leaderboard</h1>
+  </header>
+  <section id="recentScores">
+    <h2 class="title sectionTitle">Recent Scores</h2>
+    <button type="submit" id="refreshBttn">Clear</button>
+    <div id="scoresBox"></div>
+  </section>
+  <section id="addScore">
+    <h2 class="title sectionTitle" id="addTitle">Add your Score</h2>
+    <form id="addForm" action="post">
+      <input type="text" name="nameInput" id="nameInput" class="input" placeholder="Your name" required>
+      <input type="number" name="scoreInput" id="scoreInput" class="input" placeholder="Your score" required>
+      <button type="submit" id="submitBttn">Submit</button>
+    </form>
+  </section>
 </body>
 </html>
