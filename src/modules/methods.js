@@ -52,4 +52,20 @@ export default class Functions {
     const arrLocalSt = JSON.stringify(scoresArr);
     localStorage.setItem('scores', arrLocalSt);
   }
+
+  parseLocalSt() {
+    const { scoresArr } = this;
+    const elems = JSON.parse(localStorage.getItem('scores'));
+    if (elems !== null) {
+      elems.forEach((element) => {
+        scoresArr.push(element);
+      });
+    }
+  }
+
+  deleteArr() {
+    while (this.scoresArr.length > 0) {
+      this.scoresArr.pop();
+    }
+  }
 }

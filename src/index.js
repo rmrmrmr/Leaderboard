@@ -1,8 +1,13 @@
 import './style.css';
-import { refreshBttn, addForm } from './modules/elements.js';
+import { refreshBttn, addForm, scoresWrap } from './modules/elements.js';
 import Functions from './modules/methods.js';
 
 const scoresArr = new Functions();
+
+window.addEventListener('DOMContentLoaded', () => {
+  scoresArr.parseLocalSt();
+  scoresArr.printHTMl();
+});
 
 addForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -17,4 +22,7 @@ addForm.addEventListener('submit', (e) => {
 });
 
 refreshBttn.addEventListener('click', () => {
+  scoresWrap.innerHTML = '';
+  localStorage.clear();
+  scoresArr.deleteArr();
 });
