@@ -1,3 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
 body {
-  background-color: plum;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.title {
+  font-family: 'Patua One', cursive;
+}
+
+header {
+  width: 100%;
+  display: flex;
+}
+
+#header {
+  width: 100vw;
+  padding: 3vh 5vw;
+}
+
+#leaderboardTitle {
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: 800;
+}
+
+section {
+  width: 49vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4vh 5vw;
+  row-gap: 30px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+
+#scoresBox {
+  width: 100%;
+  border: solid black;
+  height: 50vh;
+}
+
+#refreshBttn {
+  height: 25px;
+  width: 70px;
+}
+
+#addScore {
+  align-content: flex-start;
+}
+
+#addForm {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  font-family: 'Patua One', cursive;
+}
+
+#submitBttn {
+  height: 40px;
+  width: 40%;
+  margin-left: auto;
+}
+
+button {
+  font-family: 'Patua One', cursive;
+  font-size: 0.7rem;
 }
