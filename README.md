@@ -12,9 +12,9 @@
 - JavaScript 🤖
 - Webpack 📦
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://rmrmrmr.github.io/Leaderboard/dist/)
+[Mike's Meelee Leaderboard](https://rmrmrmr.github.io/Leaderboard/dist/)
 
 
 ## Getting Started
