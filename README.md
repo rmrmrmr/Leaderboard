@@ -7,9 +7,10 @@
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML 🏗️
+- CSS 🎨🖌️
+- JavaScript 🤖
+- Webpack 📦
 
 ## Live Demo (if available)
 
