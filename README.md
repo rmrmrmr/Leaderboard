@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Mike's Melee Leaderboard
 
 > This is a repository template for web-development projects that use HTML, CSS and JavaScript. It has some usefull tools that can be installed by running `npm i` on the root of your directory. These are: Webpack, Jest and Babel. It also supports linters for the three programming languages and a `linters.yml` file setup for automatic checks with GitHub Workflows. The linters used and their corresponding commands are Lighthouse, Webhint(`npm install --save-dev hint@7.x` & `npx hint .`), Stylelint (`npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x` & `npx stylelint "**/*.{css,scss}"`) and ESLint (`npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x` & `npx eslint .`) This specific file is a template for the README.md file, so all of the following code can be modified for your specific project.  
 
@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rmrmrmr.github.io/Leaderboard/dist/)
 
 
 ## Getting Started
