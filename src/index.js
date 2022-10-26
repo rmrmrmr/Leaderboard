@@ -1,15 +1,8 @@
 import './style.css';
 import { refreshBttn, addForm } from './modules/elements.js';
-// import Functions from './modules/methods.js';
+import postScores from './modules/postScores';
+import getScores from './modules/getScores';
 
-window.addEventListener('DOMContentLoaded', () => {
-});
+addForm.addEventListener('submit', postScores);
 
-addForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  // const nameInput = document.getElementById('nameInput');
-  // const scoreInput = document.getElementById('scoreInput');
-});
-
-refreshBttn.addEventListener('click', () => {
-});
+refreshBttn.addEventListener('click', getScores);
