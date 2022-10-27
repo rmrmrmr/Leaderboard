@@ -4,24 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <title>Leaderboard</title>
 </head>
-<body>
-  <header id="header">
-    <h1 class="title" id="leaderboardTitle">Mike's Melee Leaderboard</h1>
+
+<body class="w-screen h-screen flex flex-wrap justify-around items-baseline font-serif">
+  <header id="header" class="flex text-8xl font-extrabold px-8 py-0 w-full text-center h-min">
+    <h1 id="leaderboardTitle" class="w-full">Mike's Melee Leaderboard</h1>
   </header>
-  <section id="recentScores">
-    <h2 class="title sectionTitle">Recent Scores</h2>
-    <button type="submit" id="refreshBttn">Refresh</button>
-    <div id="scoresBox"></div>
+
+  <section id="recentScores" class="flex flex-wrap w-2/5 h-4/6 gap-0 content-start border-8 border-black border-double rounded justify-center">
+    <h2 class="font-serif w-3/4 h-min py-4 text-4xl px-7 border-b-2 border-black">Recent Scores</h2>
+    <button type="submit" id="refreshBttn" class="w-1/4 h-min py-4 text-center text-4xl border-b-2 border-black">
+      <span class="material-symbols-outlined">
+        restart_alt
+      </span>
+    </button>
+    <div id="scoresBox" class="w-11/12"></div>
   </section>
-  <section id="addScore">
-    <h2 class="title sectionTitle" id="addTitle">Add your Score</h2>
-    <form id="addForm" action="post">
-      <input type="text" name="nameInput" id="nameInput" class="input" placeholder="Your name" required>
-      <input type="number" name="scoreInput" id="scoreInput" class="input" placeholder="Your score" required>
-      <button type="submit" id="submitBttn">Submit</button>
+
+  <section id="addScore" class="flex flex-wrap w-2/5 h-4/6 gap-y-6 content-start justify-center border-8 border-black border-double rounded">
+    <h2 id="addTitle" class="font-serif w-full h-min py-4 text-4xl text-center">Add your Score</h2>
+    <form id="addForm" action="post" class="flex flex-wrap justify-end w-4/5 gap-y-5">
+      <input type="text" name="nameInput" id="nameInput" placeholder="Your name" required class="w-full h-14 px-5 border-black border-2 rounded back placeholder-black">
+      <input type="number" name="scoreInput" id="scoreInput" placeholder="Your score" required class="w-full h-14 px-5 border-black border-2 rounded back placeholder-black">
+      <button type="submit" id="submitBttn" class="flex justify-end h-12 w-12">
+        <span class="material-symbols-outlined">
+          file_upload
+        </span>
+      </button>
     </form>
   </section>
+
 </body>
 </html>
